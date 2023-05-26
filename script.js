@@ -17,3 +17,6 @@ sentenceTag.addEventListener("keyup", (e) => {
 outputTag.addEventListener("keyup", function () {
   sentenceTag.value = this.value;
 });
+
+// when i change my typesize slider, update text next to it and
+// change the output tag's font size
