@@ -75,6 +75,54 @@ body {
       padding: 0;
       box-sizing: border-box;
       font-family: "Faune";
+      background-color: #2a2a2a;
+      color: white;
 
+
+}
+
+section.options {
+      position: fixed;
+      left: 0;
+      left: 0;
+      height: 100vh;
+      width: 280px;
+      padding: 40px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+}
+
+div.option {
+      margin: 10px 0 0 0;
+}
+
+label {
+      display: block;
+      margin: 0 0 5px 0;
+}
+
+input[type="text"] {
+      width: 100%;
+      background-color: #575757;
+      border: none;
+      padding: 5px;
+
+}
+
+.output {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 54px;
+      margin-left: 360px;
+      margin-right: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 70vw;
 
 }
