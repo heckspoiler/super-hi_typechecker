@@ -1,0 +1,71 @@
+@font-face {
+      font-family: "Alcapone Display";
+      src: url("./fonts/Alcapone-Display.otf") format("opentype");
+}
+
+@font-face {
+      font-family: "Corbby";
+      src: "./fonts/corbby.woff" format("woff")
+}
+
+@font-face {
+      font-family: "Anti Design Endeavour";
+      src: "./fonts/anti-design-endeavour.woff" format("woff");
+}
+
+@font-face {
+      font-family: "Aqem Regular";
+      src: "./fonts/aqem-regular.woff" format("woff");
+}
+
+@font-face {
+      font-family: "Archivo Italic";
+      src: "./fonts/archivo-italic-variable.ttf" format("truetype");
+}
+
+@font-face {
+      font-family: "Archivo Regular";
+      src: "./fonts/archivo-variable.ttf" format("truetype");
+}
+
+@font-face {
+      font-family: "Mahogany";
+      src: "./fonts/mahogany.woff" format("woff");
+}
+
+@font-face {
+      font-family: "Herralds";
+      src: "./fonts/herralds.woff" format("woff")
+}
+
+@font-face {
+      font-family: "Curly Gloom";
+      src: "./fonts/curly-gloom.woff" format("woff")
+}
+
+@font-face {
+      font-family: "Vallerine";
+      src: "./fonts/vallerine.woff" format("woff");
+}
+
+@font-face {
+      font-family: "Bright Live";
+      src: "./fonts/bright-live.woff" format("woff");
+}
+
+@font-face {
+      font-family: "Bamida";
+      src: "./fonts/bamida-regular.woff" format("woff")
+}
+
+
+body {
+      margin: 0;
+      padding: 0;
+
+}
+
+h1 {
+      font-family: "Bamida";
+
+}
