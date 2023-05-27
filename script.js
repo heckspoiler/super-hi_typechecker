@@ -3,6 +3,8 @@ const outputTag = document.querySelector("textarea.output");
 const originalText = outputTag.value; //that is used to save the initial value of the innerHTML in order to reuse it
 const typesizeTag = document.querySelector(`input[name="typesize"]`);
 const typesizeSpan = document.querySelector(".typesize-span");
+const lineheightTag = document.querySelector(`input[name="lineheight"]`);
+const lineheightOutput = document.querySelector("span.lineheight-output");
 
 //when I type in my sentence tag, update the output tag
 // if there's no value, put in the original text
@@ -26,4 +28,9 @@ outputTag.addEventListener("keyup", function () {
 typesizeTag.addEventListener("input", function () {
   outputTag.style.fontSize = this.value + "px";
   typesizeSpan.innerHTML = this.value + "px";
+});
+
+lineheightTag.addEventListener("input", () => {
+  outputTag.style.lineHeight = lineheightTag.value;
+  lineheightOutput.innerHTML = lineheightTag.value;
 });
