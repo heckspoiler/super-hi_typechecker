@@ -101,6 +101,12 @@ div.option {
       margin: 30px 0 0 0;
 }
 
+div.option-checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
 label {
       display: block;
       margin: 0 0 5px 0;
