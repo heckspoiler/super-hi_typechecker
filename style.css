@@ -69,6 +69,11 @@
       src: url("fonts/faune-bold.woff2"), url("fonts/faune-bold.woff")
 }
 
+/* font-family: 'Oi', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Space Mono', monospace; */
+
 
 body {
       margin: 0;

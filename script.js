@@ -6,6 +6,7 @@ const typesizeSpan = document.querySelector(".typesize-span");
 const lineheightTag = document.querySelector(`input[name="lineheight"]`);
 const lineheightOutput = document.querySelector("span.lineheight-output");
 const italicTag = document.querySelector(`input[name="italic"]`);
+const typefaceTag = document.querySelector(`select[name="typeface"]`);
 
 //when I type in my sentence tag, update the output tag
 // if there's no value, put in the original text
@@ -39,9 +40,13 @@ lineheightTag.addEventListener("input", () => {
 //when i change my italic checkbox, update fontstyle to normal or italic
 
 italicTag.addEventListener("change", () => {
-  if (italicTag.checked) {
-    outputTag.style.fontStyle = "italic";
-  } else {
-    outputTag.style.fontStyle = "normal";
-  }
+  italicTag.checked
+    ? (outputTag.style.fontStyle = "italic")
+    : (outputTag.style.fontStyle = "normal");
+});
+
+//when select for typeface is changed, update font family
+
+typefaceTag.addEventListener("input", () => {
+  outputTag.style.fontFamily = typefaceTag.value;
 });
