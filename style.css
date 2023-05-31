@@ -132,9 +132,7 @@ textarea.output {
       text-align: center;
       font-size: 64px;
       margin-left: 360px;
-      margin-right: 40px;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      padding: 40px;
       width: 70vw;
       background-color: transparent;
       color: white;
@@ -148,6 +146,28 @@ textarea.output {
 input[type="range"] {
       width: 100%;
 
+}
+
+input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: lightgray;
+      cursor: pointer;
+      width: 15rem;
+      box-shadow: inset 2px 2px 1px black;
+      border-radius: 40px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Override default look */
+      appearance: none;
+      /* Centers thumb on the track */
+      background-color: rgb(61, 58, 99);
+      height: 1rem;
+      border-radius: 50%;
+      width: 1rem;
+      box-shadow: 2px 2px 1px rgb(29, 28, 40);
 }
 
 label span {
