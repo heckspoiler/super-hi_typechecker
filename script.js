@@ -7,6 +7,8 @@ const lineheightTag = document.querySelector(`input[name="lineheight"]`);
 const lineheightOutput = document.querySelector("span.lineheight-output");
 const italicTag = document.querySelector(`input[name="italic"]`);
 const typefaceTag = document.querySelector(`select[name="typeface"]`);
+const fontweightTag = document.querySelector(`input[name="fontweight"]`);
+const fontweightOutput = document.querySelector("span.fontweight-output");
 
 //when I type in my sentence tag, update the output tag
 // if there's no value, put in the original text
@@ -49,4 +51,10 @@ italicTag.addEventListener("change", () => {
 
 typefaceTag.addEventListener("input", () => {
   outputTag.style.fontFamily = typefaceTag.value;
+});
+
+// changing fontweight
+fontweightTag.addEventListener("input", () => {
+  outputTag.style.fontWeight = fontweightTag.value;
+  fontweightOutput.innerHTML = fontweightTag.value;
 });
