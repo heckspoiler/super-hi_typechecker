@@ -62,11 +62,17 @@ fontweightTag.addEventListener("input", () => {
   fontweightOutput.innerHTML = fontweightTag.value;
 });
 
-// changing background color on click
+// changing background color on click and make this tag be "selected"
 backgroundColors.forEach((element) => {
   element.addEventListener("click", () => {
     const computedStyle = window.getComputedStyle(element);
     outputTag.style.backgroundColor = computedStyle.backgroundColor;
     outputTag.style.color = computedStyle.color;
+
+    //reset the classes
+    backgroundColors.forEach((element) => {
+      element.classList.remove("selected");
+    });
+    element.classList.add("selected");
   });
 });

@@ -188,24 +188,36 @@ div.colors div {
       margin-top: 5px;
       background-color: #2a2a2a;
       cursor: pointer;
+      border: 2px solid black;
+      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 div.colors div:nth-of-type(1) {
       color: white;
       background-color: #2a2a2a;
+      box-shadow: 2px 2px 1px black;
+
 }
 
 div.colors div:nth-of-type(2) {
       background-color: white;
       color: black;
+
 }
 
 div.colors div:nth-of-type(3) {
       color: black;
       background-color: limegreen;
+
 }
 
 div.colors div:nth-of-type(4) {
       color: white;
       background-color: rgb(205, 50, 197);
+
+}
+
+div.colors div.selected {
+      border: 2px solid #ffffff;
+      box-shadow: inset 1px 1px 4px black;
 }
