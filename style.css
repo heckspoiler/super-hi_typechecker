@@ -153,3 +153,39 @@ input[type="range"] {
 label span {
       float: right;
 }
+
+div.colors {
+      display: flex;
+      gap: 10px;
+}
+
+div.colors div {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      height: 2rem;
+      width: 2rem;
+      text-align: center;
+      border-radius: 50%;
+      margin-top: 5px;
+      background-color: #2a2a2a;
+      cursor: pointer;
+}
+
+div.colors div:nth-of-type(1) {
+      color: white;
+      background-color: #2a2a2a;
+}
+
+div.colors div:nth-of-type(2) {
+      background-color: white;
+      color: black;
+}
+
+div.colors div:nth-of-type(3) {
+      color: black;
+      background-color: limegreen;
+}
+
+div.colors div:nth-of-type(4) {
+      color: white;
+      background-color: rgb(205, 50, 197);
+}

@@ -9,6 +9,9 @@ const italicTag = document.querySelector(`input[name="italic"]`);
 const typefaceTag = document.querySelector(`select[name="typeface"]`);
 const fontweightTag = document.querySelector(`input[name="fontweight"]`);
 const fontweightOutput = document.querySelector("span.fontweight-output");
+const backgroundColors = document.querySelectorAll("div.colors div");
+
+console.log(backgroundColors);
 
 //when I type in my sentence tag, update the output tag
 // if there's no value, put in the original text
@@ -57,4 +60,13 @@ typefaceTag.addEventListener("input", () => {
 fontweightTag.addEventListener("input", () => {
   outputTag.style.fontWeight = fontweightTag.value;
   fontweightOutput.innerHTML = fontweightTag.value;
+});
+
+// changing background color on click
+backgroundColors.forEach((element) => {
+  element.addEventListener("click", () => {
+    const computedStyle = window.getComputedStyle(element);
+    outputTag.style.backgroundColor = computedStyle.backgroundColor;
+    outputTag.style.color = computedStyle.color;
+  });
 });
